@@ -83,3 +83,59 @@
   margin: 0 auto 30px;
 }
 
+#contact {
+  background-color: #000;
+  color: #fff;
+  padding: 60px 40px;
+  text-align: center;
+  border-top: 2px solid #00bfff;
+}
+
+#contact h2 {
+  font-size: 36px;
+  color: #00bfff;
+  margin-bottom: 10px;
+}
+
+#contact p {
+  color: #aaa;
+  font-size: 16px;
+  margin-bottom: 30px;
+}
+
+#contact form {
+  max-width: 600px;
+  margin: 0 auto;
+  background: rgba(0, 0, 0, 0.6);
+  border: 1px solid #00bfff;
+  border-radius: 10px;
+  padding: 30px;
+}
+
+#contact input,
+#contact textarea {
+  width: 100%;
+  background: #111;
+  border: 1px solid #00bfff;
+  color: #fff;
+  padding: 10px;
+  margin-bottom: 20px;
+  font-family: 'Orbitron', sans-serif;
+  font-size: 14px;
+}
+
+#contact button {
+  background-color: #00bfff;
+  border: none;
+  color: #000;
+  font-weight: bold;
+  padding: 12px 20px;
+  font-family: 'Orbitron', sans-serif;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#contact button:hover {
+  background-color: #00a0e0;
+}
