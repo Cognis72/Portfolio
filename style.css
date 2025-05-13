@@ -63,3 +63,23 @@
       color: #aaa;
     }
 
+
+#roadmap {
+  background-color: #000;
+  color: #fff;
+  padding: 60px 40px;
+  text-align: center;
+  border-top: 2px solid #00bfff;
+}
+
+.roadmap-step {
+  font-size: 20px;
+  color: #00bfff;
+  margin-bottom: 30px;
+  border-left: 4px solid #00bfff;
+  padding-left: 20px;
+  text-align: left;
+  max-width: 600px;
+  margin: 0 auto 30px;
+}
+
