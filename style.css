@@ -148,11 +148,25 @@ p {
   background-color: #00a0e0;
 }
 
-/* ✅ Responsive */
+.hamburger {
+  display: none;
+  font-size: 26px;
+  color: #00bfff;
+  cursor: pointer;
+}
+
+/* 👇 สำหรับมือถือ */
 @media (max-width: 768px) {
-  header {
-    flex-direction: column;
-    align-items: flex-start;
+  .hamburger {
+    display: block;
+  }
+
+  nav {
+    display: none;
+  }
+
+  nav.active {
+    display: flex;
   }
 
   nav {
@@ -164,18 +178,7 @@ p {
   nav a {
     margin: 10px 0;
     font-size: 18px;
-  }
-
-  h1 {
-    font-size: 32px;
-  }
-
-  section {
-    padding: 40px 20px;
-  }
-
-  .roadmap-step {
-    font-size: 18px;
-    padding-left: 10px;
+    padding: 10px 20px;
+    border-bottom: 1px solid #222;
   }
 }
