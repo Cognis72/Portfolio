@@ -17,3 +17,8 @@ const startDate = new Date("2025-05-11T00:00:00");
 
     updateCounter();
     setInterval(updateCounter, 1000);
+    
+    function toggleMenu() {
+  const nav = document.getElementById("navMenu");
+  nav.classList.toggle("active");
+}
