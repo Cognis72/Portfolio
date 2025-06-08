@@ -1,68 +1,72 @@
+body {
+  margin: 0;
+  font-family: 'Orbitron', sans-serif;
+  background-color: #000;
+  color: #fff;
+}
 
-    body {
-      margin: 0;
-      font-family: 'Orbitron', sans-serif;
-      background-color: #000;
-      color: #fff;
-    }
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  border-bottom: 2px solid #00bfff;
+  background-color: #111;
+  flex-wrap: wrap;
+}
 
-    header {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 20px 40px;
-      border-bottom: 2px solid #00bfff;
-      background-color: #111;
-    }
+.logo {
+  font-size: 24px;
+  font-weight: 700;
+  text-transform: uppercase;
+  width: 100px;
+  height: 40px;
+}
 
-    .logo {
-      font-size: 24px;
-      font-weight: 700;
-      text-transform: uppercase;
-      width: 100px;
-      height: 40px;
-    }
+nav {
+  display: flex;
+  flex-wrap: wrap;
+}
 
-    nav a {
-      margin-left: 30px;
-      text-decoration: none;
-      color: white;
-      font-size: 16px;
-      position: relative;
-      transition: color 0.3s;
-    }
+nav a {
+  margin-left: 30px;
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+  position: relative;
+  transition: color 0.3s;
+}
 
-    nav a:hover {
-      color: #00bfff;
-    }
+nav a:hover {
+  color: #00bfff;
+}
 
-    #counter {
-      font-size: 18px;
-      color: #00bfff;
-      margin-top: 10px;
-      text-align: center;
-      background: #111;
-      padding: 10px 0;
-      border-top: 2px solid #00bfff;
-      border-bottom: 2px solid #00bfff;
-    }
+#counter {
+  font-size: 18px;
+  color: #00bfff;
+  margin-top: 10px;
+  text-align: center;
+  background: #111;
+  padding: 10px 0;
+  border-top: 2px solid #00bfff;
+  border-bottom: 2px solid #00bfff;
+}
 
-    section {
-      padding: 60px 40px;
-      text-align: center;
-    }
+section {
+  padding: 60px 40px;
+  text-align: center;
+}
 
-    h1 {
-      font-size: 48px;
-      color: white;
-      margin-bottom: 20px;
-    }
+h1 {
+  font-size: 48px;
+  color: white;
+  margin-bottom: 20px;
+}
 
-    p {
-      font-size: 18px;
-      color: #aaa;
-    }
-
+p {
+  font-size: 18px;
+  color: #aaa;
+}
 
 #roadmap {
   background-color: #000;
@@ -113,7 +117,6 @@
   box-shadow: 0 0 20px rgba(0, 191, 255, 0.3);
 }
 
-
 #contact input,
 #contact textarea {
   width: 100%;
@@ -129,7 +132,6 @@
   display: block;
 }
 
-
 #contact button {
   background-color: #00bfff;
   border: none;
@@ -144,4 +146,36 @@
 
 #contact button:hover {
   background-color: #00a0e0;
+}
+
+/* ✅ Responsive */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  nav {
+    flex-direction: column;
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  nav a {
+    margin: 10px 0;
+    font-size: 18px;
+  }
+
+  h1 {
+    font-size: 32px;
+  }
+
+  section {
+    padding: 40px 20px;
+  }
+
+  .roadmap-step {
+    font-size: 18px;
+    padding-left: 10px;
+  }
 }
