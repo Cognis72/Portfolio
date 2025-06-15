@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cognis Development Roadmap - Project Timeline & Milestones</title>
+    <meta name="description" content="Track Cognis development progress with our interactive roadmap. View project milestones, launch timeline, and real-time development updates.">
+    <meta name="keywords" content="Cognis roadmap, development timeline, project milestones, AI development progress, software roadmap">
+    <meta name="author" content="Cognis">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://cognis.dev/roadmap.html">
+    <meta property="og:title" content="Cognis Development Roadmap - Project Timeline & Milestones">
+    <meta property="og:description" content="Track Cognis development progress with our interactive roadmap featuring real-time updates and project milestones.">
+    <meta property="og:image" content="https://cognis.dev/roadmap-og.jpg">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://cognis.dev/roadmap.html">
+    <meta property="twitter:title" content="Cognis Development Roadmap - Project Timeline & Milestones">
+    <meta property="twitter:description" content="Track Cognis development progress with our interactive roadmap featuring real-time updates and project milestones.">
+    <meta property="twitter:image" content="https://cognis.dev/roadmap-og.jpg">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    
+    <!-- Google Fonts for Sci-fi theme -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Exo+2:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "name": "Cognis Development Roadmap",
+      "description": "Interactive roadmap showing Cognis development progress, milestones, and project timeline",
+      "url": "https://cognis.dev/roadmap.html",
+      "isPartOf": {
+        "@type": "WebSite",
+        "name": "Cognis",
+        "url": "https://cognis.dev"
+      }
+    }
+    </script>
+</head>
+<body>
+    <!-- Navigation -->
+    <header>
+        <nav class="navbar" role="navigation" aria-label="Main navigation">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <h2>Cognis</h2>
+                </div>
+                <ul class="nav-menu" id="navMenu" role="menubar">
+                    <li class="nav-item" role="none">
+                        <a href="index.html" class="nav-link" data-lang="nav-home" role="menuitem">Home</a>
+                    </li>
+                    <li class="nav-item" role="none">
+                        <a href="roadmap.html" class="nav-link active" data-lang="nav-roadmap" role="menuitem">Roadmap</a>
+                    </li>
+                    <li class="nav-item" role="none">
+                        <a href="project-detail.html" class="nav-link" data-lang="nav-projects" role="menuitem">Projects</a>
+                    </li>
+                    <li class="nav-item" role="none">
+                        <a href="contact.html" class="nav-link" data-lang="nav-contact" role="menuitem">Contact</a>
+                    </li>
+                </ul>
+                <div class="nav-controls">
+                    <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark/light theme">
+                        <span class="theme-icon">🌙</span>
+                    </button>
+                    <button class="lang-toggle" id="langToggle" aria-label="Switch language">
+                        <span id="langText">EN</span>
+                    </button>
+                </div>
+                <button class="hamburger" onclick="toggleMenu()" aria-label="Toggle mobile menu" aria-expanded="false">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Roadmap Hero -->
+    <main>
+        <section class="page-hero" aria-labelledby="roadmap-title">
+            <div class="container">
+                <h1 id="roadmap-title" class="page-title" data-lang="roadmap-title">Development Roadmap</h1>
+                <div class="launch-timer" aria-label="Time since project launch">
+                    <h2 data-lang="time-since-launch">Time Since Launch</h2>
+                    <div class="timer-display" id="launchTimer" role="timer" aria-live="polite">
+                        <div class="time-unit" aria-label="Days since launch">
+                            <span class="time-value" id="days">0</span>
+                            <span class="time-label">d</span>
+                        </div>
+                        <div class="time-unit" aria-label="Hours since launch">
+                            <span class="time-value" id="hours">0</span>
+                            <span class="time-label">h</span>
+                        </div>
+                        <div class="time-unit" aria-label="Minutes since launch">
+                            <span class="time-value" id="minutes">0</span>
+                            <span class="time-label">m</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Roadmap Timeline -->
+        <section class="roadmap-timeline" aria-labelledby="timeline-title">
+            <div class="container">
+                <h2 id="timeline-title" class="sr-only">Development Timeline</h2>
+                <div class="timeline" role="list" aria-label="Development milestones">
+                <article class="timeline-item completed" role="listitem">
+                    <div class="timeline-marker" aria-hidden="true"></div>
+                    <div class="timeline-content">
+                        <h3 data-lang="roadmap-phase1-title">Phase 1: Foundation</h3>
+                        <time class="timeline-date" datetime="2024-Q1">Q1 2024</time>
+                        <p data-lang="roadmap-phase1-desc">Project initialization, core architecture design, and initial development setup.</p>
+                        <ul role="list">
+                            <li data-lang="roadmap-phase1-item1" role="listitem">Core framework development</li>
+                            <li data-lang="roadmap-phase1-item2" role="listitem">Database architecture</li>
+                            <li data-lang="roadmap-phase1-item3" role="listitem">Authentication system</li>
+                        </ul>
+                    </div>
+                </article>
+
+                <div class="timeline-item completed">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h3 data-lang="roadmap-phase2-title">Phase 2: Core Features</h3>
+                        <p class="timeline-date">Q2 2024</p>
+                        <p data-lang="roadmap-phase2-desc">Implementation of core functionalities and user interface development.</p>
+                        <ul>
+                            <li data-lang="roadmap-phase2-item1">User dashboard</li>
+                            <li data-lang="roadmap-phase2-item2">Data visualization</li>
+                            <li data-lang="roadmap-phase2-item3">API integration</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="timeline-item in-progress">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h3 data-lang="roadmap-phase3-title">Phase 3: Advanced Features</h3>
+                        <p class="timeline-date">Q3 2024</p>
+                        <p data-lang="roadmap-phase3-desc">Advanced analytics, machine learning integration, and performance optimization.</p>
+                        <ul>
+                            <li data-lang="roadmap-phase3-item1">AI-powered insights</li>
+                            <li data-lang="roadmap-phase3-item2">Real-time analytics</li>
+                            <li data-lang="roadmap-phase3-item3">Performance optimization</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="timeline-item planned">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h3 data-lang="roadmap-phase4-title">Phase 4: Expansion</h3>
+                        <p class="timeline-date">Q4 2024</p>
+                        <p data-lang="roadmap-phase4-desc">Platform expansion, mobile applications, and third-party integrations.</p>
+                        <ul>
+                            <li data-lang="roadmap-phase4-item1">Mobile applications</li>
+                            <li data-lang="roadmap-phase4-item2">Third-party integrations</li>
+                            <li data-lang="roadmap-phase4-item3">Enterprise features</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="timeline-item planned">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h3 data-lang="roadmap-phase5-title">Phase 5: Global Launch</h3>
+                        <p class="timeline-date">Q1 2025</p>
+                        <p data-lang="roadmap-phase5-desc">Global deployment, multi-language support, and international partnerships.</p>
+                        <ul>
+                            <li data-lang="roadmap-phase5-item1">Global infrastructure</li>
+                            <li data-lang="roadmap-phase5-item2">Multi-language support</li>
+                            <li data-lang="roadmap-phase5-item3">Partnership program</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Progress Stats -->
+    <section class="progress-stats">
+        <div class="container">
+            <h2 class="section-title" data-lang="progress-title">Current Progress</h2>
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-icon">✅</div>
+                    <div class="stat-number">85%</div>
+                    <div class="stat-label" data-lang="stat-completion">Completion</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon">🚀</div>
+                    <div class="stat-number">12</div>
+                    <div class="stat-label" data-lang="stat-milestones">Milestones</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon">👥</div>
+                    <div class="stat-number">8</div>
+                    <div class="stat-label" data-lang="stat-team">Team Members</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon">⏱️</div>
+                    <div class="stat-number">6</div>
+                    <div class="stat-label" data-lang="stat-months">Months</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Cognis</h3>
+                    <p data-lang="footer-description">Building the future with innovative technology solutions.</p>
+                </div>
+                <div class="footer-section">
+                    <h4 data-lang="footer-links">Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html" data-lang="nav-home">Home</a></li>
+                        <li><a href="roadmap.html" data-lang="nav-roadmap">Roadmap</a></li>
+                        <li><a href="project-detail.html" data-lang="nav-projects">Projects</a></li>
+                        <li><a href="contact.html" data-lang="nav-contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4 data-lang="footer-connect">Connect</h4>
+                    <div class="social-links">
+                        <a href="#" class="social-link">GitHub</a>
+                        <a href="#" class="social-link">LinkedIn</a>
+                        <a href="#" class="social-link">Twitter</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Cognis. <span data-lang="footer-rights">All rights reserved.</span></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

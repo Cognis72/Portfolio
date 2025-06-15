@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cognis - Contact</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>Cognis</h2>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link" data-lang="nav-home">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="roadmap.html" class="nav-link" data-lang="nav-roadmap">Roadmap</a>
+                </li>
+                <li class="nav-item">
+                    <a href="project-detail.html" class="nav-link" data-lang="nav-projects">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a href="contact.html" class="nav-link active" data-lang="nav-contact">Contact</a>
+                </li>
+            </ul>
+            <div class="nav-controls">
+                <button class="theme-toggle" id="themeToggle">
+                    <span class="theme-icon">🌙</span>
+                </button>
+                <button class="lang-toggle" id="langToggle">
+                    <span id="langText">EN</span>
+                </button>
+            </div>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Contact Hero -->
+    <section class="page-hero">
+        <div class="container">
+            <h1 class="page-title" data-lang="contact-title">Get In Touch</h1>
+            <p class="page-subtitle" data-lang="contact-subtitle">Ready to start your next project? Let's talk!</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section">
+        <div class="container">
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h2 data-lang="contact-info-title">Contact Information</h2>
+                    <div class="contact-item">
+                        <div class="contact-icon">📧</div>
+                        <div class="contact-details">
+                            <h3 data-lang="contact-email-title">Email</h3>
+                            <p>hello@cognis.dev</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">📱</div>
+                        <div class="contact-details">
+                            <h3 data-lang="contact-phone-title">Phone</h3>
+                            <p>+1 (555) 123-4567</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">📍</div>
+                        <div class="contact-details">
+                            <h3 data-lang="contact-location-title">Location</h3>
+                            <p data-lang="contact-location">San Francisco, CA</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">🕒</div>
+                        <div class="contact-details">
+                            <h3 data-lang="contact-hours-title">Business Hours</h3>
+                            <p data-lang="contact-hours">Mon - Fri: 9:00 AM - 6:00 PM PST</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-form-container">
+                    <h2 data-lang="contact-form-title">Send us a Message</h2>
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-group">
+                            <label for="name" data-lang="form-name">Name *</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email" data-lang="form-email">Email *</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="company" data-lang="form-company">Company</label>
+                            <input type="text" id="company" name="company">
+                        </div>
+                        <div class="form-group">
+                            <label for="subject" data-lang="form-subject">Subject *</label>
+                            <select id="subject" name="subject" required>
+                                <option value="" data-lang="form-select-subject">Select a subject</option>
+                                <option value="general" data-lang="form-subject-general">General Inquiry</option>
+                                <option value="project" data-lang="form-subject-project">Project Collaboration</option>
+                                <option value="support" data-lang="form-subject-support">Technical Support</option>
+                                <option value="partnership" data-lang="form-subject-partnership">Partnership</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message" data-lang="form-message">Message *</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="submit-btn" data-lang="form-submit">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <div class="container">
+            <h2 class="section-title" data-lang="faq-title">Frequently Asked Questions</h2>
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <h3 data-lang="faq-q1">What services do you offer?</h3>
+                    <p data-lang="faq-a1">We offer full-stack web development, mobile app development, AI/ML solutions, and cloud infrastructure services.</p>
+                </div>
+                <div class="faq-item">
+                    <h3 data-lang="faq-q2">How long does a typical project take?</h3>
+                    <p data-lang="faq-a2">Project timelines vary depending on complexity, but most projects range from 4-16 weeks from conception to deployment.</p>
+                </div>
+                <div class="faq-item">
+                    <h3 data-lang="faq-q3">Do you provide ongoing support?</h3>
+                    <p data-lang="faq-a3">Yes, we offer comprehensive maintenance and support packages to ensure your solutions continue to perform optimally.</p>
+                </div>
+                <div class="faq-item">
+                    <h3 data-lang="faq-q4">Can you work with existing systems?</h3>
+                    <p data-lang="faq-a4">Absolutely! We specialize in integrating new solutions with existing infrastructure and legacy systems.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Cognis</h3>
+                    <p data-lang="footer-description">Building the future with innovative technology solutions.</p>
+                </div>
+                <div class="footer-section">
+                    <h4 data-lang="footer-links">Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html" data-lang="nav-home">Home</a></li>
+                        <li><a href="roadmap.html" data-lang="nav-roadmap">Roadmap</a></li>
+                        <li><a href="project-detail.html" data-lang="nav-projects">Projects</a></li>
+                        <li><a href="contact.html" data-lang="nav-contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4 data-lang="footer-connect">Connect</h4>
+                    <div class="social-links">
+                        <a href="#" class="social-link">GitHub</a>
+                        <a href="#" class="social-link">LinkedIn</a>
+                        <a href="#" class="social-link">Twitter</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Cognis. <span data-lang="footer-rights">All rights reserved.</span></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

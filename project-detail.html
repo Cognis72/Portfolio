@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cognis - Projects</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>Cognis</h2>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link" data-lang="nav-home">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="roadmap.html" class="nav-link" data-lang="nav-roadmap">Roadmap</a>
+                </li>
+                <li class="nav-item">
+                    <a href="project-detail.html" class="nav-link active" data-lang="nav-projects">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a href="contact.html" class="nav-link" data-lang="nav-contact">Contact</a>
+                </li>
+            </ul>
+            <div class="nav-controls">
+                <button class="theme-toggle" id="themeToggle">
+                    <span class="theme-icon">🌙</span>
+                </button>
+                <button class="lang-toggle" id="langToggle">
+                    <span id="langText">EN</span>
+                </button>
+            </div>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Projects Hero -->
+    <section class="page-hero">
+        <div class="container">
+            <h1 class="page-title" data-lang="projects-page-title">Our Projects</h1>
+            <p class="page-subtitle" data-lang="projects-page-subtitle">Discover our innovative solutions and cutting-edge developments</p>
+        </div>
+    </section>
+
+    <!-- Project Details -->
+    <section class="project-details">
+        <div class="container">
+            <div class="project-nav">
+                <div class="project-selector">
+                    <label for="projectSelect" data-lang="select-project">Select Project:</label>
+                    <select id="projectSelect">
+                        <option value="0">Cognis AI Platform</option>
+                        <option value="1">DataFlow Analytics</option>
+                        <option value="2">CloudSync Pro</option>
+                        <option value="3">SmartDash</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="project-content" id="projectContent">
+                <!-- Project content will be dynamically loaded -->
+            </div>
+        </div>
+    </section>
+
+    <!-- All Projects Grid -->
+    <section class="all-projects">
+        <div class="container">
+            <h2 class="section-title" data-lang="all-projects-title">All Projects</h2>
+            <div class="projects-grid" id="allProjectsGrid">
+                <!-- All projects will be displayed here -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Cognis</h3>
+                    <p data-lang="footer-description">Building the future with innovative technology solutions.</p>
+                </div>
+                <div class="footer-section">
+                    <h4 data-lang="footer-links">Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html" data-lang="nav-home">Home</a></li>
+                        <li><a href="roadmap.html" data-lang="nav-roadmap">Roadmap</a></li>
+                        <li><a href="project-detail.html" data-lang="nav-projects">Projects</a></li>
+                        <li><a href="contact.html" data-lang="nav-contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4 data-lang="footer-connect">Connect</h4>
+                    <div class="social-links">
+                        <a href="#" class="social-link">GitHub</a>
+                        <a href="#" class="social-link">LinkedIn</a>
+                        <a href="#" class="social-link">Twitter</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Cognis. <span data-lang="footer-rights">All rights reserved.</span></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
